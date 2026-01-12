@@ -1,0 +1,160 @@
+body{
+    background-color: #f6fff8 ;
+}
+
+
+
+/* the NAV BAR */
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0rem;
+    height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: sticky;
+}
+
+#logo{
+    margin-right: 20%;
+   display: flex;
+   align-items: center; 
+   
+}
+#logo img{
+        border-radius: 50%;
+        width:45px ;
+        height: 45px;
+        object-fit: cover;
+    }
+#logo a{
+        font-weight: bold;
+        color: black;
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: none;
+        width: 200px;
+}
+
+.searchBar{
+        margin: 0.3%;
+        padding: 6px;
+        margin-right: 10px;
+        border: none;
+        font-size: 17px;
+        border-radius: 9px;
+        height: 30px;
+        width: 500px;
+        background-color: #eaf4f4;
+}
+
+.btn{
+    background-color: aliceblue;
+    border-radius: 9px;
+    padding: 6px;
+    border: none;
+    height: 45px;
+    margin: 0.3%;
+}
+
+.Instructor{
+    background-color: #ffffff;
+    font-weight: bold;
+}
+.Instructor:hover{
+    background-color: #6b9080;
+}
+.login{
+    border-style: solid;
+    border-color: black;
+    width: 7%;
+    font-weight: bold;
+}
+.cart{
+    margin-right: 1%;
+    background-color: #ffffff;
+}
+.signup{
+    font-weight:bold ;
+    background-color: #6b9080;
+    width: 13%;
+}
+
+
+
+/* the hero class*/
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.heroImg{
+    width: 80%;
+    background-color: aliceblue;
+    border-radius: 50px;
+    padding: 6px;
+    border: none;
+    margin: 0.3%;
+}
+.next{
+    width: 50px;
+}
+.previous{
+    width: 50px;
+}
+
+.footer {
+    background:#6b9080;
+    width:100%;
+    height:200px;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.footerdiv{
+    margin-bottom: 4%;
+}
+#footerImg{
+    margin-top: 10%;
+    margin-left: 20%;
+   display: flex;
+   align-items: center; 
+   
+}
+#footerImg img{
+        border-radius: 50%;
+        width:45px ;
+        height: 45px;
+        object-fit: cover;
+    }
+#footerImg a{
+        font-weight: bold;
+        color: black;
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: none;
+        width: 200px;
+}
+
+#footerBotton{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#footerBotton p{
+    margin-left: 3%;
+}
+
+#footerBotton div{
+    margin-inline-start: 68%;
+}
+
+#footerBotton div .img{
+    width:45px ;
+    height: 45px;
+    object-fit: cover;
+    margin-right: 5px;
+}
