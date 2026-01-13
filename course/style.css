@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #344e41;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+body {
+  background-color: #f4f2ee;
+  padding: 20px;
+}
+
+#main-container {
+  width: 1200px;
+  margin: 40px auto;
+  font-size: 0;
+}
+
+#main-content {
+  display: inline-block;
+  width: 70%;
+  vertical-align: top;
+  font-size: 16px;
+  background-color: #1a1a1a;
+  height: 500px;
+  border-radius: 10px;
+}
+#content-list {
+  display: inline-block;
+  width: 28%; /*2% gap*/
+  vertical-align: top;
+  font-size: 16px;
+  background-color: #dad7cd;
+  border: 1px solid #a3b18a;
+  margin-left: 2%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#lesson-list {
+  list-style: none;
+}
+.lesson-item {
+  border-bottom: 1px solid #a3b18a;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 0;
+}
+.lesson-item:last-child {
+  border-bottom: 0;
+}
+.lesson-item:hover {
+  background-color: #a3b18a;
+}
+
+.lesson-item.active {
+  background-color: #3a5a40;
+  border-left: 6px solid #588157;
+}
+.lesson-info {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 25px);
+}
+.lesson-item.active .lesson-name,
+.lesson-item.active .lesson-time,
+.lesson-item.active .play-icon {
+  color: #dad7cd;
+}
+.play-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  font-size: 16px;
+  color: #588157;
+}
+
+.lesson-name {
+  vertical-align: middle;
+
+  display: inline-block;
+  font-size: 14px;
+  width: 75%;
+}
+.lesson-time {
+  vertical-align: middle;
+
+  display: inline-block;
+  font-size: 14px;
+  width: 20%;
+  text-align: right;
+  color: #888;
+}
+#course-details {
+  display: inline-block;
+  width: 70%;
+  padding: 20px 10px;
+}
+.instructor-row {
+  margin-bottom: 25px;
+}
+.lesson-header {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #344e41;
+}
+.instructor-avatar {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  vertical-align: middle;
+  background-color: #344e41;
+}
+.name {
+  font-weight: bold;
+  font-size: 18px;
+}
+.instructor-text {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+.platform {
+  font-style: italic;
+  font-size: 14px;
+  color: #588157;
+}
+
+.description {
+  font-size: 16px;
+  color: #3a5a40;
+  line-height: 1.7;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #a3b18a;
+  margin-top: 12px;
+}
+#materials-box {
+  border-top: 2px solid #eee;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.materials-header {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #344e41;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #a3b18a;
+  padding-bottom: 5px;
+}
+
+.material-item {
+  padding: 8px 0;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.file-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  font-size: 16px;
+}
+
+.file-name {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  width: calc(100% - 30px);
+  color: #3a5a40;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.material-item:hover .file-name {
+  text-decoration: underline;
+  color: #588157;
+}
