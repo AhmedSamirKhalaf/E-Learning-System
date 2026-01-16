@@ -1,0 +1,130 @@
+/* shared-styles.css - Common styles used across all pages */
+
+/* Reset & Root Variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --beige: #DAD7CD;
+    --light-green: #A3B18A;
+    --medium-green: #588157;
+    --dark-green: #3A5A40;
+    --darker-green: #344E41;
+    --text-dark: #2d2d2d;
+    --text-light: #ffffff;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #fafafa;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Navigation - Used in all pages */
+nav {
+    background: var(--darker-green);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--beige);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--text-light);
+}
+
+/* Container - Used in all pages */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Section Title - Used in multiple pages */
+.section-title {
+    font-size: 1.3rem;
+    color: var(--darker-green);
+    margin-bottom: 1.5rem;
+}
+
+/* Page Title - Used in multiple pages */
+.page-title {
+    font-size: 2rem;
+    color: var(--darker-green);
+    margin-bottom: 2rem;
+}
+
+/* Buttons - Used across multiple pages */
+.btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: var(--medium-green);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--light-green);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid var(--beige);
+}
+
+.btn-secondary:hover {
+    background: var(--beige);
+    color: var(--darker-green);
+}
+
+/* Responsive - Common breakpoints */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    nav {
+        padding: 1rem;
+    }
+}

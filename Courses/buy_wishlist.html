@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Course - LearnHub</title>
+    <link rel="stylesheet" href="shared_styles.css">
+    <link rel="stylesheet" href="buy_wishlist.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">LearnHub</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Purchase Course</h1>
+
+        <div class="pricing-card">
+            <div class="course-info">
+                <div class="course-thumbnail">🎓</div>
+                <div class="course-details">
+                    <h2 class="course-name">Complete Web Development Bootcamp</h2>
+                    <p class="course-instructor">by Sarah Mitchell</p>
+                    <p class="course-rating">⭐ 4.8 (2,341 reviews)</p>
+                </div>
+            </div>
+
+            <div class="features">
+                <h3 class="features-title">What's Included</h3>
+                <ul class="features-list">
+                    <li class="feature-item">
+                        <span class="feature-icon">📺</span>
+                        <span>24 hours of on-demand video content</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">📄</span>
+                        <span>45 downloadable resources and code files</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">∞</span>
+                        <span>Lifetime access to course materials</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">📱</span>
+                        <span>Access on mobile, tablet, and desktop</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">🏆</span>
+                        <span>Certificate of completion</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="price-section">
+                <div class="price-row">
+                    <div>
+                        <span class="original-price">$99.99</span>
+                        <span class="discount-badge">50% OFF</span>
+                    </div>
+                </div>
+                <div class="price-row">
+                    <span>Total Price</span>
+                    <span class="final-price">$49.99</span>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-buy" onclick="handleBuy()">
+                    <span>🛒</span>
+                    <span>Buy Now</span>
+                </button>
+                <button class="btn btn-wishlist" id="wishlistBtn" onclick="toggleWishlist()">
+                    <span id="heartIcon">🤍</span>
+                    <span id="wishlistText">Add to Wishlist</span>
+                </button>
+            </div>
+
+            <div class="guarantee">
+                <p class="guarantee-text">
+                    💯 30-Day Money-Back Guarantee • Secure Payment • No Questions Asked
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let isInWishlist = false;
+
+        function toggleWishlist() {
+            const btn = document.getElementById('wishlistBtn');
+            const heart = document.getElementById('heartIcon');
+            const text = document.getElementById('wishlistText');
+
+            isInWishlist = !isInWishlist;
+
+            if (isInWishlist) {
+                btn.classList.add('active');
+                heart.textContent = '❤️';
+                text.textContent = 'In Wishlist';
+            } else {
+                btn.classList.remove('active');
+                heart.textContent = '🤍';
+                text.textContent = 'Add to Wishlist';
+            }
+        }
+
+        function handleBuy() {
+            alert('Proceeding to checkout...');
+            // Navigate to cart/payment page
+            window.location.href = '#checkout';
+        }
+    </script>
+</body>
+</html>

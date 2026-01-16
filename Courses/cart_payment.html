@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart & Checkout - LearnHub</title>
+    <link rel="stylesheet" href="shared_styles.css">
+    <link rel="stylesheet" href="cart_payment.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">LearnHub</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Shopping Cart</h1>
+
+        <div class="cart-section">
+            <h2 class="section-title">Cart Items (1)</h2>
+            
+            <div class="cart-item" id="cartItem">
+                <div class="item-thumbnail">🎓</div>
+                <div class="item-details">
+                    <h3 class="item-name">Complete Web Development Bootcamp</h3>
+                    <p class="item-instructor">by Sarah Mitchell</p>
+                </div>
+                <div class="item-price">
+                    <span class="original">$99.99</span>
+                    <span class="discounted">$49.99</span>
+                </div>
+                <button class="remove-btn" onclick="removeItem()">✕</button>
+            </div>
+        </div>
+
+        <div class="summary-section">
+            <h2 class="section-title">Order Summary</h2>
+            
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>$99.99</span>
+            </div>
+            <div class="summary-row">
+                <span>Discount (50%)</span>
+                <span style="color: var(--light-green);">-$50.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Total</span>
+                <span>$49.99</span>
+            </div>
+
+            <button class="checkout-btn" onclick="handleCheckout()">
+                Proceed to Checkout →
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function removeItem() {
+            const cartItem = document.getElementById('cartItem');
+            cartItem.style.opacity = '0';
+            cartItem.style.transform = 'translateX(-20px)';
+            
+            setTimeout(() => {
+                document.querySelector('.cart-section').innerHTML = `
+                    <div class="empty-cart">
+                        <div class="empty-icon">🛒</div>
+                        <h3>Your cart is empty</h3>
+                        <p>Start exploring courses to add them to your cart</p>
+                    </div>
+                `;
+                
+                document.querySelector('.summary-section').style.display = 'none';
+            }, 300);
+        }
+
+        function handleCheckout() {
+            alert('Redirecting to secure payment gateway...');
+            // In real app, navigate to payment page
+        }
+    </script>
+</body>
+</html>

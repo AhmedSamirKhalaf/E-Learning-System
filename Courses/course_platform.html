@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Content - LearnHub</title>
+    <link rel="stylesheet" href="shared_styles.css">
+    <link rel="stylesheet" href="course_content.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">LearnHub</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="cart_payment.html">Cart</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="course-header">
+            <h1 class="course-title">Complete Web Development Bootcamp</h1>
+            <p class="instructor">Instructor: Sarah Mitchell</p>
+            
+            <div class="progress-section">
+                <div class="progress-label">
+                    <span>Course Progress</span>
+                    <span>45%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="module-list">
+            <!-- Module 1 -->
+            <div class="module">
+                <div class="module-header">
+                    <h3 class="module-title">Module 1: Introduction to HTML & CSS</h3>
+                    <span class="module-toggle">▼</span>
+                </div>
+                <div class="lesson-list">
+                    <div class="lesson">
+                        <div class="lesson-info">
+                            <div class="lesson-status completed"></div>
+                            <span class="lesson-name">Getting Started with HTML</span>
+                        </div>
+                        <span class="lesson-duration">12 min</span>
+                    </div>
+                    <div class="lesson">
+                        <div class="lesson-info">
+                            <div class="lesson-status completed"></div>
+                            <span class="lesson-name">CSS Fundamentals</span>
+                        </div>
+                        <span class="lesson-duration">18 min</span>
+                    </div>
+                    <div class="lesson">
+                        <div class="lesson-info">
+                            <div class="lesson-status"></div>
+                            <span class="lesson-name">Flexbox Layout</span>
+                        </div>
+                        <span class="lesson-duration">25 min</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 2 -->
+            <div class="module">
+                <div class="module-header">
+                    <h3 class="module-title">Module 2: JavaScript Essentials</h3>
+                    <span class="module-toggle">▼</span>
+                </div>
+                <div class="lesson-list">
+                    <div class="lesson locked">
+                        <div class="lesson-info">
+                            <div class="lesson-status"></div>
+                            <span class="lesson-name">Variables and Data Types</span>
+                        </div>
+                        <span class="lock-icon">🔒</span>
+                    </div>
+                    <div class="lesson locked">
+                        <div class="lesson-info">
+                            <div class="lesson-status"></div>
+                            <span class="lesson-name">Functions and Scope</span>
+                        </div>
+                        <span class="lock-icon">🔒</span>
+                    </div>
+                    <div class="lesson locked">
+                        <div class="lesson-info">
+                            <div class="lesson-status"></div>
+                            <span class="lesson-name">DOM Manipulation</span>
+                        </div>
+                        <span class="lock-icon">🔒</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 3 -->
+            <div class="module">
+                <div class="module-header">
+                    <h3 class="module-title">Module 3: Advanced Topics</h3>
+                    <span class="module-toggle">▼</span>
+                </div>
+                <div class="lesson-list">
+                    <div class="lesson locked">
+                        <div class="lesson-info">
+                            <div class="lesson-status"></div>
+                            <span class="lesson-name">Async JavaScript</span>
+                        </div>
+                        <span class="lock-icon">🔒</span>
+                    </div>
+                    <div class="lesson locked">
+                        <div class="lesson-info">
+                            <div class="lesson-status"></div>
+                            <span class="lesson-name">API Integration</span>
+                        </div>
+                        <span class="lock-icon">🔒</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle module expansion
+        document.querySelectorAll('.module-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const lessonList = header.nextElementSibling;
+                const toggle = header.querySelector('.module-toggle');
+                
+                if (lessonList.style.display === 'none') {
+                    lessonList.style.display = 'block';
+                    toggle.textContent = '▼';
+                } else {
+                    lessonList.style.display = 'none';
+                    toggle.textContent = '▶';
+                }
+            });
+        });
+
+        // Handle lesson clicks
+        document.querySelectorAll('.lesson:not(.locked)').forEach(lesson => {
+            lesson.addEventListener('click', () => {
+                alert('Opening lesson...');
+            });
+        });
+    </script>
+</body>
+</html>
