@@ -7,12 +7,17 @@ body{
 /* the NAV BAR */
 .nav{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-content: center;
     gap: 0rem;
-    height: 50px;
-    margin-left: 10%;
+    height: 70px;
+    background-color:#f6fff8 ;
     margin-right: 10%;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
 }
 
 #logo{
@@ -69,15 +74,19 @@ body{
     border-color: black;
     width: 7%;
     font-weight: bold;
+    background-color: #eaf4f4;
+
 }
 .cart{
     margin-right: 1%;
-    background-color: #ffffff;
+    height: 50px;
 }
 .signup{
     font-weight:bold ;
-    background-color: #6b9080;
+    background-color: #eaf4f4;
     width: 13%;
+    border-color: black;
+    border-style: solid;
 }
 
 
@@ -86,6 +95,7 @@ body{
 
 
 .hero{
+    padding-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,13 +116,82 @@ body{
     width: 50px;
 }
 
+/*--------------- the categories filter to be DONE-----------------*/
+
+.categories{
+    display: flex;
+    flex-flow: wrap;
+    margin-left: 185px;
+    margin-top: 5%;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.categories button{
+    font-weight: bold;
+    color: #6b9080;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    border-color: #6b9080;
+    padding: 6px;
+    border-radius: 9px;
+    transition: width 2s;    
+}
+
+
+.categories button:hover{
+    border-color: aliceblue;
+    color: #6b9080;
+}
+
+
+
+/*-----------------------the Courses--------------------*/
+
+
+
+.courses{
+    display: grid;
+    margin-left: 185px;
+    margin-top: 3%;
+    grid-template-columns: repeat(3,1fr)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------Footer------------------- */
 .footer {
-    background:#6b9080;
+    background:#344E41;
     width:100%;
     height:200px;
-    position:absolute;
+    position:static;
     bottom:0;
     left:0;
+    border-color: #6b9080;
 }
 .footerdiv{
     margin-bottom: 4%;
