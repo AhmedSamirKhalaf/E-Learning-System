@@ -1,0 +1,239 @@
+body{
+    background-color: #f6fff8 ;
+}
+
+
+
+/* the NAV BAR */
+.nav{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 0rem;
+    height: 70px;
+    background-color:#f6fff8 ;
+    margin-right: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+#logo{
+    margin-right: 20%;
+   display: flex;
+   align-items: center; 
+   
+}
+#logo img{
+        border-radius: 50%;
+        width:45px ;
+        height: 45px;
+        object-fit: cover;
+    }
+#logo a{
+        font-weight: bold;
+        color: black;
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: none;
+        width: 200px;
+}
+
+.searchBar{
+        margin: 0.3%;
+        padding: 6px;
+        margin-right: 10px;
+        border: none;
+        font-size: 17px;
+        border-radius: 9px;
+        height: 30px;
+        width: 500px;
+        background-color: #eaf4f4;
+}
+
+.btn{
+    background-color: aliceblue;
+    border-radius: 9px;
+    padding: 6px;
+    border: none;
+    height: 45px;
+    margin: 0.3%;
+}
+
+.Instructor{
+    background-color: #ffffff;
+    font-weight: bold;
+}
+.Instructor:hover{
+    background-color: #6b9080;
+}
+.login{
+    border-style: solid;
+    border-color: black;
+    width: 7%;
+    font-weight: bold;
+    background-color: #eaf4f4;
+
+}
+.cart{
+    margin-right: 1%;
+    height: 50px;
+}
+.signup{
+    font-weight:bold ;
+    background-color: #eaf4f4;
+    width: 13%;
+    border-color: black;
+    border-style: solid;
+}
+
+
+
+/* the hero class*/
+
+
+.hero{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.heroImg{
+    width: 80%;
+    background-color: aliceblue;
+    border-radius: 50px;
+    padding: 6px;
+    border: none;
+    margin: 0.3%;
+}
+.next{
+    width: 50px;
+}
+.previous{
+    width: 50px;
+}
+
+/*--------------- the categories filter to be DONE-----------------*/
+
+.categories{
+    display: flex;
+    flex-flow: wrap;
+    margin-left: 185px;
+    margin-top: 5%;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.categories button{
+    font-weight: bold;
+    color: #6b9080;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    border-color: #6b9080;
+    padding: 6px;
+    border-radius: 9px;
+    transition: width 2s;    
+}
+
+
+.categories button:hover{
+    border-color: aliceblue;
+    color: #6b9080;
+}
+
+
+
+/*-----------------------the Courses--------------------*/
+
+
+
+.courses{
+    display: grid;
+    margin-left: 185px;
+    margin-top: 3%;
+    grid-template-columns: repeat(3,1fr)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------Footer------------------- */
+.footer {
+    background:#344E41;
+    width:100%;
+    height:200px;
+    position:static;
+    bottom:0;
+    left:0;
+    border-color: #6b9080;
+}
+.footerdiv{
+    margin-bottom: 4%;
+}
+#footerImg{
+    margin-top: 10%;
+    margin-left: 20%;
+   display: flex;
+   align-items: center; 
+   
+}
+#footerImg img{
+        border-radius: 50%;
+        width:45px ;
+        height: 45px;
+        object-fit: cover;
+    }
+#footerImg a{
+        font-weight: bold;
+        color: black;
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: none;
+        width: 200px;
+}
+
+#footerBotton{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#footerBotton p{
+    margin-left: 3%;
+}
+
+#footerBotton div{
+    margin-inline-start: 68%;
+}
+
+#footerBotton div .img{
+    width:45px ;
+    height: 45px;
+    object-fit: cover;
+    margin-right: 5px;
+}

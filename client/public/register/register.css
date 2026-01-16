@@ -1,0 +1,102 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 5%;
+    
+}
+
+img {
+    border: none;
+    width: 570px;
+    height: 750px;
+    box-shadow: 10px 15px 20px lightblue;
+}
+
+
+
+.login > div {
+    background-color: #eaf4f4;
+    box-shadow: 10px 20px 20px lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 600px;
+    height: 750px;
+   
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form select {
+ border-color: #A3B18A;
+    border-width: 2px;
+    margin-bottom: 20px;
+    margin-right: 10%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 9px;
+    height: 45px;
+    width: 100%;
+    background-color: #eaf4f4;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form input:focus,
+.form select:focus {
+    outline: none;
+    border-color: #588157;
+    box-shadow: 0 0 0 3px rgba(88, 129, 87, 0.1);
+}
+
+.form select {
+    cursor: pointer;
+}
+
+.form label{
+    
+    color: #3a5a40;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.form button {
+    background-color: #588157;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 12px;
+    height: 50px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.form button:hover {
+    background-color: #3a5a40;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(88, 129, 87, 0.3);
+}
+
+.form button:active {
+    transform: translateY(0);
+}
+
